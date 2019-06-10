@@ -1,2 +1,2 @@
-# hateoas-service
-Demonstrate restful service with HATEOAS
+# filter-service
+Demonstrates the use of squiggly filtering of response jsons
