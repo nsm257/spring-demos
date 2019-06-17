@@ -20,7 +20,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-parent:1.5.3.RELEASE")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation("org.springframework.boot:spring-boot-starter-data-rest")
+	implementation("org.springframework.boot:spring-boot-starter-hateoas")
 	
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 

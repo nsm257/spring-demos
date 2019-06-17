@@ -19,9 +19,9 @@ import com.microservices.data.Person
 import com.microservices.data.PhoneNumber
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Configuration
-import org.springframework.data.rest.core.config.RepositoryRestConfiguration
-import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer
-import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapter
+//import org.springframework.data.rest.core.config.RepositoryRestConfiguration
+//import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer
+//import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapter
 import javax.persistence.EntityManager
 import javax.persistence.metamodel.EntityType
 import javax.persistence.metamodel.Type
@@ -40,15 +40,15 @@ class HateoasServiceApplication {
 		filter.order = 1
 		return filter
 	}
-
-	@Configuration
-	inner class RestConfig
-	constructor (private val entityManager: EntityManager) : RepositoryRestConfigurer {
-
-		override fun configureRepositoryRestConfiguration(config: RepositoryRestConfiguration) {
-			config.exposeIdsFor(Person::class.java, Address::class.java, PhoneNumber::class.java)
-		}
-	}
+//
+//	@Configuration
+//	inner class RestConfig
+//	constructor (private val entityManager: EntityManager) : RepositoryRestConfigurer {
+//
+//		override fun configureRepositoryRestConfiguration(config: RepositoryRestConfiguration) {
+//			config.exposeIdsFor(Person::class.java, Address::class.java, PhoneNumber::class.java)
+//		}
+//	}
 
 //	@Configuration
 //	inner class RestConfig @Autowired
