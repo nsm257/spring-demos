@@ -18,11 +18,14 @@ repositories {
 extra["springCloudVersion"] = "Greenwich.SR1"
 
 dependencies {
+	implementation("org.springframework.boot:spring-boot-starter-parent:1.5.3.RELEASE")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.springframework.cloud:spring-cloud-starter-netflix-zuul")
+	implementation("org.slf4j:jcl-over-slf4j:1.7.6")
+	implementation("commons-logging:commons-logging:1.2")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
